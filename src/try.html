@@ -1,0 +1,57 @@
+<div style="height: 100vh; display: flex; justify-content: center; align-items: center; background-color: gray;">
+    <div class="main" style="display: flex; border-radius:10px; background-color: white; width: 75%;">
+        <div class="leftdiv" style="flex: 1; padding: 60px 0; display: flex; justify-content: center; position: relative;">
+            <form class="example-form">
+                <h2 style="color: #1a1ab5;">dotwork</h2>
+                <h1 style="font-size: 26px;">Log in to your Account</h1>
+                <h4 style="font-weight: 400; font-size: 14px; margin-top: -10px;">Welcome back! Select method to log in:</h4>
+                <div style="width: 100%; display: flex; gap: 10px; margin-bottom: 30px;">
+                    <button style="flex: 1; background-color: white; border: 1px solid gray; height: 40px; border-radius: 5px; font-size: 14px; font-weight: 700;"><fa-icon [icon]="faGoogle" style="margin-right: 9px; font-size: 18px;"></fa-icon> Google</button>
+                    <button style="flex: 1; background-color: white; border: 1px solid gray; height: 40px; border-radius: 5px; font-size: 14px; font-weight: 700;"><fa-icon [icon]="faFacebook" style="margin-right: 9px; font-size: 18px;"></fa-icon> Facebook</button>
+                </div>
+                <hr>
+                <p style="position: absolute; top: 250px; left: 225px; background-color: white; font-size: 14px; color: gray;">or continue with email</p>
+                
+    
+                <label className="block text-left">Email</label>
+              <input
+                type="email"
+                placeholder="abc@gmail.com"
+                value={email}
+                className="w-full mb-2 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <label className="block text-left">Password</label>
+              <div className="relative w-full">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="password"
+                  value={password}
+                  className="w-full mb-4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <button
+                  type="button"
+                  className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-600"
+                >
+                </button>
+              </div>
+    
+                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                    <mat-checkbox class="example-margin">Remember me</mat-checkbox>
+                    <a href="#" style="text-decoration: none; font-size: 13px; font-weight: 500;">Forget Password?</a>
+                </div>
+    
+                <button type="submit" style="width: 100%; margin-top: 10px; background-color: #1a1ab5; height: 35px; color: white; border: none; border-radius: 10px; font-weight: 500;">Log in</button>
+    
+                <p>Don't have an account? <a href="#" style="text-decoration: none; font-size: 14px; font-weight: 500;">Create an account</a></p>
+                
+            </form>
+        </div>
+    
+        <div class="rightdiv" style="flex: 1; background-color: #1a1ab5; display: flex; justify-content: center; align-items: center;">
+            <div style="width: 50%; padding-top: 50%; border-radius: 50%; background-color: #7777c961;">
+            </div>
+        </div>
+        
+    
+    </div>
+    </div>
